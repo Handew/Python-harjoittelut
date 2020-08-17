@@ -1,6 +1,6 @@
 print("Aloitetaan tiedoston käsittely.")
 
-tiedosto = open("Luvut.txt", "r")
+tiedosto = open("Luvut.txt", "r", encoding="utf8")
 #data = tiedosto.read()
 #print(data)
 
