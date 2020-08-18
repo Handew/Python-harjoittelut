@@ -6,7 +6,7 @@ vastaus = conn.getresponse()
 html = str(vastaus.read())
 
 # print(html[:500])
-indeksi = html.index('<div class="temperature positive')
+indeksi = html.index('div class="temperature positive')
 alku = indeksi+78
 loppu = alku+2
 lämpötila = html[alku:loppu]
