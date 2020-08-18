@@ -18,6 +18,7 @@ print("Lisätty taulu tietokantaan")
 nimi = input("Anna henkilön nimi: ")
 ikä = input("Anna henkilön ikä: ")
 
+# SQL-injektion riski!
 sql = f'INSERT INTO nimet VALUES ("{nimi}", {ikä})'
 kursori.execute(sql)
 conn.commit()
